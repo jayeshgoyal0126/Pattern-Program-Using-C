@@ -1,14 +1,16 @@
 #include <stdio.h>
 int main()
 {
-    int n = 5;
+    int n,i,comp,j,k;
+
+    printf("Enter an no."); // taking number till which our dimond will be printed
+    scanf("%d",&n); // assining the value into n
 
     // first outer loop to iterate through each row
-    for (int i = 0; i < 2 * n - 1; i++) {
+    for (i = 0; i < 2 * n - 1; i++) {
 
         // assigning values to the comparator according to
         // the row number
-        int comp;
         if (i < n) {
             comp = 2 * (n - i) - 1;
         }
@@ -17,7 +19,7 @@ int main()
         }
 
         // first inner loop to print leading whitespaces
-        for (int j = 0; j < comp; j++) {
+        for (j = 0; j < comp; j++) {
             printf(" ");
         }
 
